@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - St. Charles High School Band of Pirates Parents</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images/pirate-logo.jpg" alt="Pirate Logo" class="logo">
+                    <div class="title-section">
+                        <h1>St. Charles High School</h1>
+                        <h2>Band of Pirates Parents</h2>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="fundraisers.html" class="nav-link">Fundraisers</a></li>
+                        <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                        <li><a href="calendar.html" class="nav-link">Calendar</a></li>
+                        <li><a href="car-show.html" class="nav-link">Car Show</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <div class="container">
+                <h2>Join the Band of Pirates Parents</h2>
+                <div class="signup-content">
+                    <p>Join our community of dedicated parents and support our amazing students!</p>
+                    <form class="signup-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="student">Student Name:</label>
+                            <input type="text" id="student" name="student">
+                        </div>
+                        <button type="submit" class="submit-button">Sign Me Up!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 St. Charles High School Band of Pirates Parents. All rights reserved.</p>
+            <p>501(c)(3) Tax-Exempt Organization</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form handling
+        document.querySelector('.signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            if (!data.name || !data.email) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            const submitButton = this.querySelector('.submit-button');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = 'Signing Up...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for signing up! We\'ll be in touch soon.');
+                this.reset();
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

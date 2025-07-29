@@ -40,8 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event listeners to navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            
+            // If it's an external link (like car-show.html), allow normal navigation
+            if (href && !href.startsWith('#')) {
+                return; // Let the browser handle the navigation
+            }
+            
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = href.substring(1);
             showSection(targetId);
             
             // Smooth scroll to top
