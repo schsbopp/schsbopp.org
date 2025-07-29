@@ -9,7 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 .container {
@@ -106,14 +106,20 @@ body {
 
 .hero-image {
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .band-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Crop black bars by scaling and positioning */
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 .hero-text h3 {
