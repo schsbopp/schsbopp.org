@@ -245,16 +245,18 @@ document.querySelectorAll('.info-card').forEach(card => {
 // Smooth reveal animation for hero content
 window.addEventListener('load', function() {
     const heroElements = document.querySelectorAll('.car-show-hero .hero-text > *, .car-show-hero .hero-flyer');
-    heroElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.8s ease ${index * 0.2}s, transform 0.8s ease ${index * 0.2}s`;
-        
-        setTimeout(() => {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
-        }, 100);
-    });
+    if (heroElements.length > 0) {
+        heroElements.forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = `opacity 0.8s ease ${index * 0.2}s, transform 0.8s ease ${index * 0.2}s`;
+            
+            setTimeout(() => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    }
 });
 
 // Add loading states for images - removed to fix visibility issue
