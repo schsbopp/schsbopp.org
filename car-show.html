@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Show 2025 - St. Charles High School Band of Pirates Parents</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="car-show.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images/pirate-logo.jpg" alt="Pirate Logo" class="logo">
+                    <div class="title-section">
+                        <h1>St. Charles High School</h1>
+                        <h2>Band of Pirates Parents</h2>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="#fundraisers" class="nav-link">Fundraisers</a></li>
+                        <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+                        <li><a href="#calendar" class="nav-link">Calendar</a></li>
+                        <li><a href="car-show.html" class="nav-link active">Car Show</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="car-show-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Annual Car Show</h1>
+                        <h2>September 14, 2025</h2>
+                        <p>Join us for our annual car show fundraiser! This exciting event brings together classic cars, live music, and community spirit to support our amazing band programs.</p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <h3>📅 Date</h3>
+                                <p>September 14, 2025</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>📍 Location</h3>
+                                <p>St. Charles High School<br>St. Charles, MO</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>🎵 Features</h3>
+                                <p>Live Band Performance<br>Classic Cars<br>Food & Drinks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-flyer">
+                        <img src="images/car-show-flyer.jpg" alt="Car Show 2025 Flyer" class="flyer-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Carousel Section -->
+        <section class="carousel-section">
+            <div class="container">
+                <h2>Photos from Previous Car Shows</h2>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slide active">
+                            <img src="images/car-show-1.jpg" alt="Car Show Photo 1">
+                            <div class="slide-caption">Classic cars on display at our 2024 car show</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/car-show-2.jpg" alt="Car Show Photo 2">
+                            <div class="slide-caption">Community gathering and live music</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/car-show-3.jpg" alt="Car Show Photo 3">
+                            <div class="slide-caption">Beautiful vintage automobiles</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/car-show-4.jpg" alt="Car Show Photo 4">
+                            <div class="slide-caption">Band performance and car showcase</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/car-show-5.jpg" alt="Car Show Photo 5">
+                            <div class="slide-caption">Award-winning classic cars</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation arrows -->
+                    <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
+                        <span>‹</span>
+                    </button>
+                    <button class="carousel-btn next-btn" onclick="changeSlide(1)">
+                        <span>›</span>
+                    </button>
+                    
+                    <!-- Dots indicator -->
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 St. Charles High School Band of Pirates Parents. All rights reserved.</p>
+            <p>501(c)(3) Tax-Exempt Organization</p>
+        </div>
+    </footer>
+
+    <script src="car-show.js"></script>
+</body>
+</html>
