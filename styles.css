@@ -411,6 +411,89 @@ body {
     }
 }
 
+/* Shared nav / hamburger styles */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.nav-toggle .hamburger,
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+.nav-toggle .hamburger::before { top: -8px; }
+.nav-toggle .hamburger::after { top: 8px; }
+
+.main-nav .nav-list {
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+/* Mobile: hide full nav and show toggle */
+@media (max-width: 768px) {
+    .nav-toggle { display: inline-block; }
+    .main-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 1000;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .main-nav .nav-list.open { display: flex; }
+    .main-nav .nav-list li { width: 100%; }
+    .nav-link {
+        display: block;
+        padding: 14px 20px;
+        border: none;
+        text-align: left;
+        width: 100%;
+    }
+    .main-header { position: relative; }
+}
+
+/* Place the hamburger in the top-right on mobile */
+@media (max-width: 768px) {
+    .main-header { position: relative; }
+    .main-header .nav-toggle {
+        position: absolute;
+        /* vertically center the toggle relative to the header (lines up with logo)
+           and keep a bit of space above by using transform for precise control */
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+        z-index: 1100;
+        padding: 8px;
+    }
+    /* slightly enlarge the hamburger bars for easier tapping */
+    .nav-toggle .hamburger,
+    .nav-toggle .hamburger::before,
+    .nav-toggle .hamburger::after {
+        width: 28px;
+        height: 3.5px;
+    }
+}
+
+
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
@@ -716,6 +799,23 @@ body {
 .event-link:hover {
     background: #dbeafe;
     text-decoration: none;
+}
+
+/* Flyer image responsive rules */
+.flyer-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 480px) {
+    .flyer-image {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .event-types h3 {
