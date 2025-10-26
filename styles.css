@@ -370,10 +370,22 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Keep header items in a single row on mobile so the logo can sit left,
+       the title can be centered, and the hamburger sits in the top-right. */
     .header-content {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    .logo-section {
+        flex: 0 0 auto;
+        margin-left: 8px;
+    }
+    .title-section {
+        flex: 1 1 auto;
         text-align: center;
+        padding-right: 48px; /* space for the hamburger */
     }
     
     .main-nav ul {
