@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffe"/>
+    </linearGradient>
+    <style>
+      .title { font: 72px 'Arial Black', sans-serif; fill: #c8232c; text-shadow: 2px 2px rgba(0,0,0,0.2);} 
+      .subtitle { font: 36px 'Arial', sans-serif; fill: #0b3d91; }
+      .body { font: 28px 'Arial', sans-serif; fill: #111; }
+      .small { font: 20px 'Arial', sans-serif; fill: #222; }
+      .accent { fill: #f59e0b; font-weight:700 }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="40" y="40" width="1120" height="1520" rx="24" fill="#fafafa" stroke="#e5e7eb" stroke-width="2"/>
+
+  <text x="80" y="140" class="title">CAR SHOW 2026</text>
+  <text x="80" y="200" class="subtitle">September 26, 2026</text>
+
+  <g transform="translate(80,260)">
+    <rect width="1040" height="1" fill="#e5e7eb" />
+  </g>
+
+  <text x="80" y="320" class="body">Jefferson Intermediate School</text>
+  <text x="80" y="360" class="body">2660 Zumbehl Rd., St. Charles, MO 63301</text>
+  <text x="80" y="420" class="body">10:00am - 2:00pm • Registration opens at 8:00am</text>
+
+  <text x="80" y="520" class="body">Entry Fee: <tspan class="accent">$25</tspan></text>
+  <text x="80" y="570" class="body">Proceeds benefit the St. Charles High School Band of Pirates Parents (BOPP)</text>
+
+  <g transform="translate(80,640)">
+    <rect x="0" y="0" width="420" height="320" rx="12" fill="#fff" stroke="#e5e7eb" />
+    <text x="20" y="40" class="small">Open to the Public</text>
+    <text x="20" y="80" class="small">No car? No problem — come enjoy the show!</text>
+  </g>
+
+  <g transform="translate(540,640)">
+    <rect x="0" y="0" width="580" height="320" rx="12" fill="#fff" stroke="#e5e7eb" />
+    <text x="20" y="40" class="small">50/50 Drawing • Raffle Baskets • Concessions</text>
+    <text x="20" y="80" class="small">Questions? Call or Text: 314-606-4515</text>
+    <text x="20" y="130" class="small">Mail registration to:</text>
+    <text x="20" y="160" class="small">St. Charles High School • ATTN: BOPP</text>
+    <text x="20" y="190" class="small">725 N Kingshighway • St. Charles, MO 63301</text>
+  </g>
+
+  <text x="80" y="1060" class="small">Please send checks payable to: BOPP. Or donate online at schsbopp.org/donate</text>
+
+  <rect x="80" y="1120" width="1040" height="360" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="100" y="1160" class="small">This is a placeholder flyer created to update the website until the official flyer file is provided.</text>
+  <text x="100" y="1200" class="small">If you have a PDF or image for the official flyer, attach it and I will replace this placeholder with the official artwork.</text>
+
+  <text x="80" y="1520" class="small">schsbopp.org</text>
+</svg>
