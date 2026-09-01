@@ -52,7 +52,7 @@ This website is built to match the design and layout shown in the bopp.jpg refer
 All content has been integrated from the original schsbopp.org website:
 
 - Mission statement and welcome message
-- Fundraising events (Car Show 9/14/2025, Music Bingo TBD, Trivia TBD)
+- Fundraising events (Car Show 9/26/2026, Music Bingo TBD, Trivia TBD)
 - Volunteer opportunities (Seamstresses needed for band camp)
 - Calendar integration with Google calendars
 - Contact information (angie@schsbopp.org)
